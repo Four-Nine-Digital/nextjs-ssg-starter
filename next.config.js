@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/ssg-next-github-page-starter',
+  basePath: '',
   images: {
     unoptimized: true
   }
