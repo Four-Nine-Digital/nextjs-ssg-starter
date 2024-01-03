@@ -1,6 +1,5 @@
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
-
 import { fetchPage } from '../api/fetch';
+import markdown from '../lib/markdown';
 
 export default function Home({ content }) {
   const { title, body } = content.fields;
@@ -12,7 +11,7 @@ export default function Home({ content }) {
         return (
           <div key={sys.id} className="space-y-4">
             <h2>{title}</h2>
-            <div className="space-y-3">{documentToReactComponents(text)}</div>
+            <div className="space-y-3">{markdown(text)}</div>
           </div>
         );
       })}
