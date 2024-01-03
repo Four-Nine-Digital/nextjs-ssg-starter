@@ -14,6 +14,15 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Content Manangement with Contentful
+
+This project utilizes [Contentful](https://www.contentful.com/developers/) as a Content Management System (CMS) to streamline content creation, management, and delivery. Contentful provides a flexible and headless CMS architecture, allowing content authors to create and update content independently from the presentation layer.
+
+In this project, we leverage [Contentful Compose](https://www.contentful.com/help/introduction-to-compose/) to facilitate the creation and management of page types. Contentful Compose is an application designed by Contentful to simplify the process of building and publishing web pages. It focuses on providing an intuitive and user-friendly experience for editors and authors, streamlining the content creation workflow.
+Please refer to the official [Compose setup guide documentation](https://www.contentful.com/help/install-compose/) and the [_Building A Website with Compose in Next.js_ document](https://www.contentful.com/developers/docs/compose/building-a-website-with-compose/).
+
+The package [**@contentful/rich-text-react-renderer**](https://www.npmjs.com/package/@contentful/rich-text-react-renderer#rich-text-react-renderer) is used to render Contentful rich text field types.
+
 ## Deploy
 
 This repository uses [GitHub Actions](https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions) for automated deployment of the Next.js application with [Static Site Generation(SSG)](https://nextjs.org/docs/pages/building-your-application/rendering/static-site-generation). The deployment pipeline follows these steps:
