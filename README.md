@@ -4,6 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+The env variables `CONTENTFUL_SPACE_ID` and `CONTENTFUL_ACCESS_TOKEN` are required to run the app locally. Please update the `.env.local.example` file with the correct values and change the file name to `.env.local`.
+
+Please refer to the [Contentful Authentication document](https://www.contentful.com/developers/docs/references/authentication/) for steps to get your personal access token.
+
 First, run the development server:
 
 ```bash
