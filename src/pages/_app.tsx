@@ -6,7 +6,26 @@ const navigation = {
   0: {
     id: 'nav-products',
     displayName: 'Products',
-    href: '/'
+    subNav: {
+      0: {
+        id: 'subNav-clientGallery',
+        displayName: 'Client Gallery',
+        description: 'Better way to share, deliver, proof and sell photos',
+        href: '/'
+      },
+      1: {
+        id: 'subNav-website',
+        displayName: 'Website',
+        description: 'Build a beautiful portfolio website',
+        href: '/'
+      },
+      2: {
+        id: 'subNav-studioManager',
+        displayName: 'Studio Manager',
+        description: 'Photography business manager',
+        href: '/'
+      }
+    }
   },
   1: {
     id: 'nav-showcase',
