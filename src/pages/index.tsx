@@ -1,5 +1,5 @@
-import { fetchPage } from '../api/fetch';
-import markdown from '../lib/markdown';
+import { fetchPage } from '@/api/fetch';
+import markdown from '@/lib/markdown';
 
 export default function Home({ content }) {
   const { title, body } = content.fields;
